@@ -95,7 +95,13 @@ import Heading from './parts/HeadingComponent'
 export default {
     components: {
         Heading
-    }
+    },
+    mounted(){
+        this.$gtag.pageview({
+            page_path: '/cookies-policy',
+            page_title: "Cookies"
+        })
+    },
 
 }
 </script>

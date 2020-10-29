@@ -46,6 +46,12 @@ export default {
     components: {
         Heading,
     },
+    mounted(){
+        this.$gtag.pageview({
+            page_path: '/about',
+            page_title: "About"
+        })
+    },
     methods: {
         contact(){
             this.$router.push({name: "contact"})

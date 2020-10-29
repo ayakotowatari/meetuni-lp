@@ -14,8 +14,18 @@ import VueYouTubeEmbed from 'vue-youtube-embed';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 import '@mdi/font/css/materialdesignicons.css'; // Ensure you are using css-loader
+import VueGtag from "vue-gtag";
+
 Vue.use(Vuetify);
 Vue.use(VueYouTubeEmbed);
+Vue.use(VueGtag, {
+    config: { 
+        id: process.env.VUE_APP_GA_ID,
+        params: {
+            send_page_view: false
+        }
+    }
+  });
 
 /**
  * The following block of code may be used to automatically register your

@@ -25,6 +25,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "vue-gtag": "^1.10.0",
         "vue-router": "^3.4.7",
         "vue-youtube-embed": "^2.2.2",
         "vuetify": "^2.3.15"

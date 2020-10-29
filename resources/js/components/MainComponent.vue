@@ -53,7 +53,7 @@
                     block
                     depressed
                     color="primary"
-                    :to="{name: 'booking-component'}"
+                    @click="book"
                 >book a preview today</v-btn>
             </v-col>
         </v-row>
@@ -67,7 +67,22 @@ export default {
     components:{
         Heading
     },
+    mounted(){
+        this.$gtag.pageview({
+            page_path: '/',
+            page_title: "Home"
+        })
+    },
+    methods: {
+        book(){
+            this.$router.push({name: 'booking-component'})
 
+            this.$gtag.event("click", {
+                event_category: "button_click",
+                event_label: "to_booking"
+            });
+        }
+    }
 }
 </script>
 

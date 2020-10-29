@@ -173,6 +173,12 @@ export default {
             loading: false,
         }
     },
+    mounted(){
+        this.$gtag.pageview({
+            page_path: '/booking-preview',
+            page_title: "Booking"
+        })
+    },
     methods: {
         send(){
             if(this.$refs.form.validate()){
@@ -196,6 +202,10 @@ export default {
                     this.allerror = error.response.data.errors
                 })
             }
+            this.$gtag.event("click", {
+                event_category: "button_click",
+                event_label: "send_booking"
+            });
         }
     }
 }

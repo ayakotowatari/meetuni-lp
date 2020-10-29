@@ -58,12 +58,24 @@ export default {
         },
         toBook(){
             this.$router.push({name: 'booking-component'})
+            this.$gtag.event("click", {
+                event_category: "button_click",
+                event_label: "to_booking"
+            });
         },
         toAbout(){
             this.$router.push({name: 'about-component'})
+            this.$gtag.event("click", {
+                event_category: "button_click",
+                event_label: "to_about"
+            });
         },
         toContact(){
             this.$router.push({name: 'contact-component'})
+            this.$gtag.event("click", {
+                event_category: "button_click",
+                event_label: "to_contact"
+            });
         }
     }
 }

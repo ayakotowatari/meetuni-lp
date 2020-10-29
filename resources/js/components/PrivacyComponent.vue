@@ -230,7 +230,12 @@
 
 <script>
 export default {
-
+    mounted(){
+        this.$gtag.pageview({
+            page_path: '/privacy-policy',
+            page_title: "Privacy"
+        })
+    },
 }
 </script>
 

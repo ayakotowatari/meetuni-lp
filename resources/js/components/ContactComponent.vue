@@ -170,6 +170,12 @@ export default {
             loading: false,
         }
     },
+    mounted(){
+        this.$gtag.pageview({
+            page_path: '/contact',
+            page_title: "Contact"
+        })
+    },
     methods: {
         send(){
             if(this.$refs.form.validate()){
@@ -193,6 +199,11 @@ export default {
                     this.allerror = error.response.data.errors
                 })
             }
+
+            this.$gtag.event("click", {
+                event_category: "button_click",
+                event_label: "send_contact"
+            });
         }
     }
 
