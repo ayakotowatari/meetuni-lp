@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        
+        <meta name="google-site-verification" content="woNeov-H3XYFle9P2QRGIKmaNVCK3qgN5_ug5dr3KIo" />
 </head>
 <body>
     <div id="app">
