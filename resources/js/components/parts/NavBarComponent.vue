@@ -72,7 +72,7 @@
                 @click="toTopPage"
                 class="hidden-sm-and-down"
             >
-                <span>top page</span>
+                <span>home</span>
             </v-btn>
             <v-btn
                 text

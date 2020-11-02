@@ -8,7 +8,11 @@
                 <heading-component></heading-component>
             </v-col>
         </v-row>
-        <v-row justify="center" align="center" class="mb-12">
+        <v-row 
+            justify="center" 
+            align="center" 
+            :class="{'mb-12':$vuetify.breakpoint.mdAndUp, 'mb-2':$vuetify.breakpoint.smAndDown}"
+        >
             <v-col cols="6" sm="6" md="3" lg="2" xl="2" class="woman-box">
                 <v-img 
                     src="https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/character+15.svg" 
@@ -54,7 +58,7 @@
                     >
                         <v-icon dark>mdi-check-bold</v-icon>
                     </v-avatar>
-                    <span class="lead-text">Built-in booking and notifications system as well as student analytics will make lead generation activities ever so simple.</span>
+                    <span class="lead-text">Built-in booking and notifications system as well as student analytics will make lead generation activities ever so simple and effective.</span>
                 </div>
                 <v-btn
                     block
