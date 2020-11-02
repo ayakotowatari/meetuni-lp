@@ -1,8 +1,15 @@
 <template>
     <v-container>
-        <heading-component></heading-component>
+        <v-row 
+            justify="center" 
+            :class="{'mb-12':$vuetify.breakpoint.mdAndUp, 'mb-4':$vuetify.breakpoint.smAndDown}"
+        >
+            <v-col cols="12" sm="12" md="12" lg="8" xl="8">
+                <heading-component></heading-component>
+            </v-col>
+        </v-row>
         <v-row justify="center" align="center" class="mb-12">
-            <v-col cols="6" sm="6" md="3">
+            <v-col cols="6" sm="6" md="3" lg="2" xl="2" class="woman-box">
                 <v-img 
                     src="https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/character+15.svg" 
                     cover 
@@ -10,7 +17,7 @@
                 >
                 </v-img>
             </v-col>
-            <v-col cols="6" sm="6" md="3">
+            <v-col cols="6" sm="6" md="3" lg="2" xl="2" class="woman-box">
                 <v-img 
                     src="https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/character+14.svg" 
                     cover 
@@ -18,7 +25,7 @@
                 >
                 </v-img>
             </v-col>
-            <v-col cols="12" sm="12" md="6">
+            <v-col cols="12" sm="12" md="6" lg="4" xl="4">
                 <div class="mb-10">
                     <v-avatar
                         color="primary"
@@ -27,7 +34,7 @@
                     >
                         <v-icon dark>mdi-check-bold</v-icon>
                     </v-avatar>
-                    <span class="lead-text">Plan online marketing events such as information sessions or taster lectures whenever you like.</span>
+                    <span class="lead-text">Plan online marketing events, such as information session, taster lectures, and alumni talks whenever you like.</span>
                 </div>
                 <div class="mb-10">
                     <v-avatar
@@ -37,7 +44,7 @@
                     >
                         <v-icon dark>mdi-check-bold</v-icon>
                     </v-avatar>
-                    <span class="lead-text">Create and publish a beautiful event listing on the student-facing meetUni website.</span>
+                    <span class="lead-text">Create and publish a beautiful event listing on the meetUni website for students to like and/or follow.</span>
                 </div>
                 <div class="mb-10">
                     <v-avatar
@@ -47,7 +54,7 @@
                     >
                         <v-icon dark>mdi-check-bold</v-icon>
                     </v-avatar>
-                    <span class="lead-text">Built-in booking and notifications system as well as student analytics will make event management ever so simple.</span>
+                    <span class="lead-text">Built-in booking and notifications system as well as student analytics will make lead generation activities ever so simple.</span>
                 </div>
                 <v-btn
                     block
@@ -101,10 +108,28 @@ export default {
     position:absolute;
 }
 .lead-text{
-    font-size: 24px;
+    font-size: 18px;
 }
 .woman{
     width: 80%;
     height: 80%;
 }
+.woman-box{
+    padding: 0 !important;
+}
+
+@media(max-width:780px){
+    .heading{
+        text-align: left !important;
+    }
+    .woman{
+        width: 100%;
+        height: 100%;
+    }  
+    .woman-box{
+        padding: 12px !important;
+        margin-bottom: 32px;
+    }
+}
+
 </style>

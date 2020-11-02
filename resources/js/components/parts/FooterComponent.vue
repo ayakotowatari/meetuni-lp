@@ -33,7 +33,7 @@ export default {
     data(){
         return{
             links:[
-                {text: 'Home', route: '/'},
+                {text: 'Top Page', route: '/'},
                 {text: 'About', route:'/about-us'},
                 {text: 'Privacy', route:'/privacy-policy'},
                 {text: 'Contact', route:'/contact'},

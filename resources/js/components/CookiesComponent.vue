@@ -1,7 +1,21 @@
 <template>
     <v-container>
-        <heading-component></heading-component>
-        <h1 class="grey--text mb-10">Cookies Policy</h1>
+        <v-row 
+            justify="center" 
+            :class="{'mb-12':$vuetify.breakpoint.mdAndUp, 'mb-4':$vuetify.breakpoint.smAndDown}"
+        >
+            <v-col cols="12" sm="12" md="12" lg="8" xl="8">
+                <heading-component></heading-component>
+            </v-col>
+        </v-row>
+        <v-row 
+            justify="center" 
+            :class="{'mb-10':$vuetify.breakpoint.mdAndUp, 'mb-2':$vuetify.breakpoint.smAndDown}"
+        >
+            <v-col cols="12" sm="12" md="12" lg="8" xl="8">
+                <h1 class="grey--text">Cookies Policy</h1>
+            </v-col>
+        </v-row>
         <v-row justify="center">
             <v-col cols="12" sm="12" md="8">
                 <p class="overline">Last Updated October 28th, 2020</p>

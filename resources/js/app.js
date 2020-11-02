@@ -20,7 +20,7 @@ Vue.use(Vuetify);
 Vue.use(VueYouTubeEmbed);
 Vue.use(VueGtag, {
     config: { 
-        id: process.env.VUE_APP_GA_ID,
+        id: "UA-181645851-1",
         params: {
             send_page_view: false
         }

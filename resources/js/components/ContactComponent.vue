@@ -7,16 +7,30 @@
             </template>
         </v-snackbar>
         <v-container>
-            <heading-component></heading-component>
-            <h1 class="grey--text mb-10">Contact Form</h1>
-            <v-row>
-                <v-col cols="12" sm="12" md="6">
+            <v-row 
+                justify="center" 
+                :class="{'mb-12':$vuetify.breakpoint.mdAndUp, 'mb-4':$vuetify.breakpoint.smAndDown}"
+            >
+                <v-col cols="12" sm="12" md="12" lg="8" xl="8">
+                    <heading-component></heading-component>
+                </v-col>
+            </v-row>
+            <v-row 
+                justify="center" 
+                :class="{'mb-10':$vuetify.breakpoint.mdAndUp, 'mb-2':$vuetify.breakpoint.smAndDown}"
+            >
+                <v-col ols="12" sm="12" md="12" lg="8" xl="8">
+                    <h1 class="grey--text">Contact Form</h1>
+                </v-col>
+            </v-row>
+            <v-row justify="center">
+                <v-col cols="12" sm="12" md="4">
                     <v-img
                         src=https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/drawkit-server-woman-colour-1200px.png
                         cover
                     ></v-img>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="4">
                     <v-form ref="form">
                         <v-row>
                             <v-col cols="12" sm="12" md="12" class="py-0">

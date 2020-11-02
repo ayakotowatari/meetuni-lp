@@ -7,16 +7,30 @@
             </template>
         </v-snackbar>
         <v-container>
-            <heading-component></heading-component>
-            <h1 class="grey--text mb-10">Book a Preview</h1>
-            <v-row class="mb-10">
-                <v-col cols="12" sm="12" md="7">
+            <v-row 
+                justify="center" 
+                :class="{'mb-12':$vuetify.breakpoint.mdAndUp, 'mb-4':$vuetify.breakpoint.smAndDown}"
+            >
+                <v-col cols="12" sm="12" md="12" lg="8" xl="8">
+                    <heading-component></heading-component>
+                </v-col>
+            </v-row>
+            <v-row 
+                justify="center" 
+                :class="{'mb-10':$vuetify.breakpoint.mdAndUp, 'mb-2':$vuetify.breakpoint.smAndDown}"
+            >
+                <v-col cols="12" sm="12" md="12" lg="8" xl="8">
+                    <h1 class="grey--text">Book a Preview</h1>
+                </v-col>
+            </v-row>
+            <v-row justify="center" class="mb-10">
+                <v-col cols="12" sm="12" md="8" lg="8" xl="8">
                     <h2 class="grey--text text--darken-3 mb-4">Hello ! A preview will be ready sometime very soon.</h2>
                     <p class="body-1">We are working very hard to put finishing touches on to meetUni. It should be ready very soon. Please let us know your email address and we will be getting in touch with you as soon as it is ready. </p>
                 </v-col>
             </v-row>
             <v-row justify="center">
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="4">
                     <youtube
                         :video-id="videoId"
                         player-width=448
@@ -24,7 +38,7 @@
                         class="video-responsive mb-4"
                     ></youtube>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="4">
                     <v-form ref="form">
                         <v-row>
                             <v-col cols="12" sm="12" md="6" class="py-0">
@@ -175,7 +189,7 @@ export default {
     },
     mounted(){
         this.$gtag.pageview({
-            page_path: '/booking-preview',
+            page_path: '/book-preview',
             page_title: "Booking"
         })
     },
