@@ -27,7 +27,7 @@
                     <v-avatar
                         class="mr-3"
                     >
-                        <img src="https://meetuni.s3-ap-northeast-1.amazonaws.com/Ayako.png" alt="">
+                        <img src="https://meetuni.s3-ap-northeast-1.amazonaws.com/ayakov2.jpg" alt="">
                     </v-avatar>
                     <span class="hidden-sm-and-down">Ayako Towatari, Founder of meetUni</span>
                     <span class="hidden-md-and-up">Ayako Towatari <br>Founder of meetUni</span>
@@ -40,7 +40,7 @@
                     </v-card-text>
                     <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn dark text @click="contact">contact</v-btn>
+                        <v-btn dark text @click="contact">contact ayako</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-col>
