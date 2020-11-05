@@ -234,7 +234,7 @@
                     Ayako Towatari<br>
                     4-2-13-705, Aobadai<br>
                     Meguro-Ku, Tokyo<br>
-                    153-0042, Japan<br>
+                    153-0042 Japan<br>
                 </p>
             </v-col>
         </v-row>
