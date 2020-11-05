@@ -232,10 +232,9 @@
                 <p class="body-1 mb-8">
                     meetUni<br>
                     Ayako Towatari<br>
-                    Ueda, 1-6-1-505 Arima<br>
-                    Miyamae-ku, Kawasaki-shi<br>
-                    Kanagawa, 216-0003<br>
-                    Japan<br>
+                    4-2-13-705, Aobadai<br>
+                    Meguro-Ku, Tokyo<br>
+                    153-0042, Japan<br>
                 </p>
             </v-col>
         </v-row>

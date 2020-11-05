@@ -34,7 +34,7 @@
                     </v-card-title>
 
                     <v-card-text class="headline font-weight-bold">
-                    <p>"meetUni was developed to help universities to reach out to prospective international students across the world more easily. Traditionally, universities have needed to rely heavily on local agents and organizations for international education marketing. However, with technologies, universities could take more control than before in expanding their reach and generating leads in the international market.</p> 
+                    <p>"meetUni was developed to help universities and colleges to reach out to prospective international students across the world more easily. Traditionally, universities and colleges have needed to rely heavily on local agents and organizations for international education marketing. However, with technologies, you can take more control than before in expanding your reach and generating leads in the international market.</p> 
                     <p>As a former international student and manager of international education marketing at the Tokyo branch of the British Council, it has been my passion to promote the value of international education in changing lives of individuals and in enabling people to collaborate internationally to solve common global issues. We very much look forward to working with you and turn international education into everyone's opportunity.</p> 
                     <p>I am keen to hear from you and please don’t hesitate to contact me if you have any questions.</p>
                     </v-card-text>
