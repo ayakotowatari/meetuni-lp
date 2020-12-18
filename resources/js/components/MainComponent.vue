@@ -65,7 +65,9 @@
                     depressed
                     color="primary"
                     @click="book"
-                >book a preview today</v-btn>
+                >book a preview
+                    <v-icon>mdi-chevron-right</v-icon>
+                </v-btn>
             </v-col>
         </v-row>
     </v-container>
