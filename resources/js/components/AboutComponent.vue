@@ -10,13 +10,57 @@
         </v-row>
         <v-row 
             justify="center" 
-            :class="{'mb-10':$vuetify.breakpoint.mdAndUp, 'mb-2':$vuetify.breakpoint.smAndDown}"
+            :class="{'mb-6':$vuetify.breakpoint.mdAndUp, 'mb-2':$vuetify.breakpoint.smAndDown}"
         >
             <v-col cols="12" sm="12" md="12" lg="8" xl="8">
-                <h1 class="grey--text">About Us</h1>
+                <h1 class="grey--text">The Team</h1>
             </v-col>
         </v-row>
-        <v-row justify="center">
+        <v-row
+            justify="center"
+        >
+            <v-col cols="12" sm="12" md="3" lg="2" xl="2" class="alignment">
+                <v-avatar
+                    size="72"
+                    class="mb-4"
+                >
+                    <img src="https://meetuni.s3-ap-northeast-1.amazonaws.com/ayakov2.jpg" alt="">
+                </v-avatar>
+                <p class="mb-1">Ayako Towatari</p>
+                <p class="job">Founder & Managing Director</p>
+            </v-col>
+            <v-col cols="12" sm="12" md="3" lg="2" xl="2" class="alignment">
+                <v-avatar
+                    size="72"
+                    class="mb-4"
+                >
+                    <img src="https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/TD.png" alt="">
+                </v-avatar>
+                <p class="mb-1">Daisky Nakamura</p>
+                <p class="job">Technical Director</p>
+            </v-col>
+            <v-col cols="12" sm="12" md="3" lg="2" xl="2" class="alignment">
+                <v-avatar
+                    size="72"
+                    class="mb-4"
+                >
+                    <img src="https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/Nanda.png" alt="">
+                </v-avatar>
+                <p class="mb-1">Meinanda Chudahman</p>
+                <p class="job">Marketing Director</p>
+            </v-col>
+            <v-col cols="12" sm="12" md="3" lg="2" xl="2" class="alignment">
+                <v-avatar
+                    size="72"
+                    class="mb-4"
+                >
+                    <img src="https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/Makiko.png" alt="">
+                </v-avatar>
+                <p class="mb-1">Makiko Goshi</p>
+                <p class="job">Finance Advisor</p>           
+            </v-col>
+        </v-row>
+        <!-- <v-row justify="center">
             <v-col cols="12" sm="12" md="8" class="pa-0">
                <v-card
                     class="mx-auto"
@@ -44,13 +88,7 @@
                     </v-card-actions>
                 </v-card>
             </v-col>
-            <!-- <v-col cols="12" sm="12" md="2">
-                <v-img
-                    src="https://meetuni.s3-ap-northeast-1.amazonaws.com/illustration/carry-on-colour1200px.png"
-                    contain
-                ></v-img>
-            </v-col> -->
-        </v-row>
+        </v-row> -->
     </v-container>
 </template>
 
@@ -77,8 +115,17 @@ export default {
 </script>
 
 <style>
+.job{
+    font-size: 14px;
+}
 .greet{
     font-size: 18px;
+}
+
+@media(max-width:780px){
+    .alignment{
+        text-align: center;
+    }
 }
 
 </style>
